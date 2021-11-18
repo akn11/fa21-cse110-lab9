@@ -5,6 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="lab9.js"></script>
+
+  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({
+      token: "9a4c86cbbe24486289c7bf2de767162c"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
+
+
   <title>Lab 9</title>
 
   <style>
@@ -69,21 +80,21 @@
     </form>
 
     <section id="error-btns">
-      <button>Console Log</button>
-      <button>Console Error</button>
-      <button>Console Count</button>
-      <button>Console Warn</button>
-      <button>Console Assert</button>
-      <button>Console Clear</button>
-      <button>Console Dir</button>
-      <button>Console dirxml</button>
-      <button>Console Group Start</button>
-      <button>Console Group End</button>
-      <button>Console Table</button>
-      <button>Start Timer</button>
-      <button>End Timer</button>
-      <button>Console Trace</button>
-      <button>Trigger a Global Error</button>
+      <button onclick="logDemo()">Console Log</button>
+      <button onclick="errorDemo()">Console Error</button>
+      <button onclick="countDemo()">Console Count</button>
+      <button onclick="warnDemo()">Console Warn</button>
+      <button onclick="assertDemo()">Console Assert</button>
+      <button onclick="clearDemo()">Console Clear</button>
+      <button onclick="dirDemo()">Console Dir</button>
+      <button onclick="dirxmlDemo()">Console dirxml</button>
+      <button onclick="groupStartDemo()">Console Group Start</button>
+      <button onclick="groupEndDemo()">Console Group End</button>
+      <button onclick="tableDemo()">Console Table</button>
+      <button onclick="startTimerDemo()">Start Timer</button>
+      <button onclick="endTimerDemo()">End Timer</button>
+      <button onclick="traceDemo()">Console Trace</button>
+      <button onclick="globalErrorDemo()">Trigger a Global Error</button>
     </section>
   </main>
 
